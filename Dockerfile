@@ -20,7 +20,7 @@ RUN pip install -r requirements.txt
 COPY . /app/
 
 # Запускаем бота
-CMD ["python", "bot/data/init_db.py", "bot/bot.py"]
+CMD ["python", "bot/bot.py"]
 
 
 
