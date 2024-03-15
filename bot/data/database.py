@@ -192,7 +192,7 @@ async def create_tables():
         await conn.run_sync(Base.metadata.create_all)
 
 
-async def main():
+async def main_2():
     """
     Основная функция для создания таблиц и тестового пользователя.
 
@@ -202,6 +202,3 @@ async def main():
     await create_tables()
     await create_user(123, "admin")
 
-
-if __name__ == "__main__":
-    asyncio.run(main())
