@@ -138,7 +138,7 @@ async def my_coroutine(query: types.CallbackQuery, callback_data: MyCallback, se
         while not stop_flag.is_set():
             product_info = await get_product_info(session, callback_data.data)
             await query.message.answer(format_product_info(product_info))
-            await asyncio.sleep(1)
+            await asyncio.sleep(300)
     except asyncio.CancelledError:
         print("Coroutine canceled.")
     finally:
