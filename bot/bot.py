@@ -30,10 +30,6 @@ async def main() -> None:
 
     await dp.start_polling(bot, mylist=[1, 2, 3], mylist2=[11, 22, 33])
 
-    # # Создаем сеанс и коннектор для aiohttp
-    # connector = aiohttp.TCPConnector()
-    # async with aiohttp.ClientSession(connector=connector) as session:
-    #     # Ваша логика работы с сессией
 
 if __name__ == "__main__":
     asyncio.run(main())
